@@ -2,12 +2,11 @@
   "name": "vue-tailwind-dashboard",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "vue-cli-service serve",
+ "scripts": {
+    "dev": "concurrently \"npm run serve --prefix frontend\" \"npm run start --prefix backend\"",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
+    "start": "node server.js"
+},
   "dependencies": {
     "axios": "^1.7.7",
     "core-js": "^3.8.3",
