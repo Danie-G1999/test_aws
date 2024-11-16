@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router';
 import DashboardMaster from '@/pages/master/DashboardMaster.vue';
 import homePage from '@/pages/homePage.vue';
 import profilePage from '@/pages/profilePage.vue';
+import SettingsPage from '@/pages/settingsPage.vue';
+import addContact from '@/pages/addContact.vue';
 
 const routes = [
     {
@@ -20,6 +22,16 @@ const routes = [
                 path: '/profile',
                 component: profilePage
             },
+            {
+                name: 'Setting',
+                path: '/setting',
+                component: SettingsPage
+            },
+            {
+                name: 'addContact',
+                path : '/add-contact/:id?',
+                component: addContact
+            }
         ]
     }
     
