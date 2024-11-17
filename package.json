@@ -1,9 +1,9 @@
 {
   "devDependencies": {
-    "concurrently": "^9.1.0"
+    "concurrently": "^9.1.0",
+    "typescript": "^5.6.3"
   },
   "scripts": {
-  "dev": "concurrently \"npm run serve --prefix frontend\" \"npm run start --prefix backend\""
-}
-
+    "dev": "concurrently \"npm run serve --prefix frontend\" \"npm run start --prefix backend\""
+  }
 }

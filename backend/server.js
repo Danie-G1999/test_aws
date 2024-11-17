@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
+const port = process.env.PORT || 3000;
 
 // Importamos las rutas
 const contactRoutes = require('./routes/contactRoutes');
@@ -19,5 +20,5 @@ app.use(cors({
 app.use('/api', contactRoutes);
 
 app.listen(5000, () => {
-  console.log('Backend running on port 5000');
+  console.log(`Server is running on port ${port}`);
 });
